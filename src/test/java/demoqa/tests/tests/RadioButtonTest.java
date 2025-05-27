@@ -1,6 +1,6 @@
-package demoqa.tests;
+package demoqa.tests.tests;
 
-import base.BaseTest;
+import demoqa.tests.base.BaseTest;
 import demoqa.pages.RadioButtonPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

@@ -1,7 +1,7 @@
-package demoqa.tests;
+package demoqa.tests.tests;
 
 import org.junit.jupiter.api.Test;
-import base.BaseTest;
+import demoqa.tests.base.BaseTest;
 import demoqa.pages.TextBoxPage;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
