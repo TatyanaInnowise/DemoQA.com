@@ -37,5 +37,6 @@ build/
 ### Mac OS ###
 .DS_Store
 
+# Ignore these files
+src/main/java/demoqa/pages/CheckBoxPage.java
 src/test/java/demoqa/tests/CheckBoxTest.java
-src/main/java/demoqa/tests/tests/pages/CheckBoxPage.java
