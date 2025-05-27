@@ -36,3 +36,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+src/test/java/demoqa/tests/CheckBoxTest.java
+src/main/java/demoqa/pages/CheckBoxPage.java
