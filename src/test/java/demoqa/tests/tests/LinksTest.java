@@ -18,7 +18,7 @@ public class LinksTest extends BaseTest {
     @BeforeEach
     public void openLinksPage() {
         driver.get("https://demoqa.com/links");
-        linksPage = new LinksPage(driver); //
+        linksPage = new LinksPage(driver);
     }
     @Test
     @Story("Verify broken link response")
