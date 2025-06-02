@@ -1,5 +1,6 @@
 package demoqa.tests.tests;
 
+import io.qameta.allure.*;
 import org.junit.jupiter.api.Test;
 import demoqa.tests.base.BaseTest;
 import demoqa.pages.TextBoxPage;
@@ -8,7 +9,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.junit.jupiter.api.BeforeEach;
 
-
+@Epic("DemoQA Text Box")
+@Feature("Form Submission and Validation")
 public class TextBoxTest extends BaseTest {
 
     @BeforeEach
@@ -17,6 +19,10 @@ public class TextBoxTest extends BaseTest {
     }
 
     @Test
+    @Story("Submit form with valid data")
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Fills in all form fields with valid data and verifies that the confirmation block displays correct values.")
+
     public void sendForm() {
 
         TextBoxPage textBoxPage = new TextBoxPage(driver);
@@ -37,6 +43,10 @@ public class TextBoxTest extends BaseTest {
     }
 
     @Test
+    @Story("Validation error on invalid email")
+    @Severity(SeverityLevel.NORMAL)
+    @Description("Tries to submit the form with an invalid email and checks that the email field shows an error.")
+
     public void errorForInvalidEmail() {
 
         TextBoxPage textBoxPage = new TextBoxPage(driver);

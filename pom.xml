@@ -45,6 +45,15 @@
             <artifactId>webdrivermanager</artifactId>
             <version>5.8.0</version>
         </dependency>
+
+
+            <!-- Allure JUnit 5 integration -->
+            <dependency>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-junit5</artifactId>
+                <version>2.24.0</version>
+            </dependency>
+
     </dependencies>
 
     <build>
@@ -55,6 +64,14 @@
                 <artifactId>allure-maven</artifactId>
                 <version>2.11.2</version>
             </plugin>
+
+            <!-- Allure Maven plugin -->
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.11.2</version>
+            </plugin>
+
         </plugins>
     </build>
 

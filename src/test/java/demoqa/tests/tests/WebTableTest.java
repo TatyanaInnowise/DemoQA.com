@@ -2,10 +2,14 @@ package demoqa.tests.tests;
 
 import demoqa.pages.WebTablePage;
 import demoqa.tests.base.BaseTest;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+
+@Epic("DemoQA Web Tables")
+@Feature("Adding and Deleting Table Rows")
 public class WebTableTest extends BaseTest {
 
     @BeforeEach
@@ -14,6 +18,10 @@ public class WebTableTest extends BaseTest {
     }
 
     @Test
+    @Story("Add new record to the table")
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Fills out the form with user data, submits it, and verifies that the new entry appears in the table.")
+
     public void addDataToTable() {
         WebTablePage page = new WebTablePage(driver);
 
@@ -33,6 +41,10 @@ public class WebTableTest extends BaseTest {
 
 
     @Test
+    @Story("Delete record from the table")
+    @Severity(SeverityLevel.NORMAL)
+    @Description("Deletes a row by name and verifies that it no longer appears in the table.")
+
     public void deleteRowFromTable() {
         WebTablePage page2 = new WebTablePage(driver);
 
