@@ -48,6 +48,4 @@ public class UploadDownloadTest extends BaseTest {
 
         Assertions.assertTrue(uploadedPath.contains("sampleFile.jpeg"), "Uploaded file path doesn't contain expected file name: " + uploadedPath);
     }
-
-
 }

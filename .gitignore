@@ -40,3 +40,6 @@ build/
 # Ignore these files
 src/main/java/demoqa/pages/CheckBoxPage.java
 src/test/java/demoqa/tests/tests/CheckBoxTest.java
+
+.idea/
+allure-results/
